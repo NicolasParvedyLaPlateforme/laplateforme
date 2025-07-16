@@ -55,6 +55,7 @@ main section button {
 main section{
     padding-left:70px;
     padding-right:70px;
+    box-sizing: border-box;
 }
 
 main section, main img{
@@ -180,4 +181,58 @@ p{
 
 #bloc-reseau{
     margin-top:50px;
+}
+
+@media screen and (max-width: 800px) {
+  ul, main, footer, header{
+    flex-direction:column;
+  }
+
+  section{
+    padding:10px;
+  }
+
+  header{
+    height:auto;
+    padding-left:0;
+  }
+
+  main section{
+    width:auto;
+    align-items:center;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+  }
+
+  main{
+    max-height:inherit;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main h1, p{
+    text-align:center;
+  }
+
+  footer{
+    justify-content: center;
+    align-items:center;
+  }
+
+  #reseau{
+    display:flex;
+    flex-direction: row;
+  }
+
+  footer ul li{
+    text-align:center;
+  }
+
+  main img {
+    width:100%;
+  }
+
+
 }
